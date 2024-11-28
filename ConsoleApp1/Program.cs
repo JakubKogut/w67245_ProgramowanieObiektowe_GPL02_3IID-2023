@@ -136,3 +136,45 @@ public class zadanie3
     public void Display(int low, int high);
 
 }
+
+
+public string GetGender()
+{
+    var g = int.Parse(Pesel[9].ToString())
+
+    return g % 2 == 0 ? "Woman" : "Man"
+
+
+}
+
+public int GetAge()
+
+{
+    var year = int.Parse(Pesel.substring(0,2))
+    var month = int.Parse(Pesel.substring(2, 2))
+
+    if (month > 80)
+    {
+        year += 1800;
+    }
+    else if (month > 20)
+    {
+        year += 2000;
+    }
+    else
+    {
+        year += 1900;
+
+    }
+    return DateTime.Today.Year - year
+
+}
+
+
+
+{
+    internal class Student : Person2
+{
+    public string 
+}
+}
